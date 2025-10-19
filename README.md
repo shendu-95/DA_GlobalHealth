@@ -38,7 +38,7 @@ This project is structured around answering several key questions:
 
 ---
 
-## 📊 Key Findings & Visualizations
+##  Key Findings & Visualizations
 
 ### 1. Patient Demographics
 
@@ -91,7 +91,7 @@ The dataset shows a remarkably uniform distribution across key demographics.
 
 ---
 
-## 🛠️ Tools & Libraries Used
+##  Tools & Libraries Used
 
 This analysis was conducted using Python 3 and the following libraries:
 -   **`pandas`**: For data manipulation and analysis.
