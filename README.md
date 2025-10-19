@@ -46,25 +46,25 @@ The dataset shows a remarkably uniform distribution across key demographics.
 
 -   **Age:** The patient age distribution is nearly uniform, ranging from 20 to 89 years, with a mean age of approximately 54. This broad representation supports comparative analysis across different age groups.
 
-    ![Age Distribution](Age_plot.png)
+    ![Age Distribution](assets/Age_plot.png)
 
 -   **Gender:** The dataset is well-balanced with nearly equal representation from Male (16,796), Female (16,709), and Other (16,495) genders.
 
-    ![Gender Count](Gender_plot.png)
+    ![Gender Count](assets/Gender_plot.png)
 
 -   **Country/Region:** The 50,000 patients are sourced from 10 different countries, with each country contributing a roughly equal share (around 10%) of the total patient population.
 
-    ![Country/Region Distribution](Country_region_piechart.png)
+    ![Country/Region Distribution](assets/Country_region_piechart.png)
 
 ### 2. Key Predictors of Cancer Severity
 
 -   **Feature Importance:** A Random Forest model reveals that the predictive power for `Target_Severity_Score` is heavily concentrated in lifestyle and inherent risk factors. **Smoking** and **Genetic Risk** are the dominant predictors, each contributing nearly **29%** to the model's importance. Demographics and cancer specifics (like stage or type) have a negligible impact.
 
-    ![Feature Importance for Severity Score](Feature_importance_randomforest.png)
+    ![Feature Importance for Severity Score](assets/Feature_importance_randomforest.png)
 
 -   **Correlation with Risk Factors:** All five analyzed risk factors (`Genetic_Risk`, `Air_Pollution`, `Alcohol_Use`, `Smoking`, `Obesity_Level`) show a **positive linear relationship** with the severity score. However, their individual explanatory power is weak, with R² scores ranging from just **6.3%** (Obesity) to **23.4%** (Smoking).
 
-    ![Risk Factors vs Severity Score](Factor_vs_Sevscore_linregress.jpg)
+    ![Risk Factors vs Severity Score](assets/Factor_vs_Sevscore_linregress.png)
 
 -   **Model Performance**: After hyperparameter tuning with `GridSearchCV`, the Random Forest model for predicting `Target_Severity_Score` became more robust, correcting for initial overfitting while maintaining a strong test R² score of **0.767**.
 
@@ -77,11 +77,11 @@ The dataset shows a remarkably uniform distribution across key demographics.
 
 -   **Influence of Gender:** Gender has a **minimal to no practical influence** on the average cost of treatment. Within any given country, the cost difference between genders is negligible.
 
-    ![Average Treatment Cost by Country and Gender](AverageCancer_Treatment_Cost_country_gender_overallavg.png)
+    ![Average Treatment Cost by Country and Gender](assets/AverageCancer_Treatment_Cost_country_gender_overallavg.png)
 
 -   **Influence of Age and Country:** In contrast, **Age Group** and **Country** reveal more significant variations. The heatmap shows that the **youngest (0-30)** and **oldest (76+)** age groups consistently incur the highest costs. The **31-45 age group is the cheapest** globally, with the lowest average cost found in Pakistan ($49,657) for this demographic.
 
-    ![Heatmap of Average Treatment Cost](Heatmap_Average_Treatment_cost_by_Age_group_and_Country.png)
+    ![Heatmap of Average Treatment Cost](assets/Heatmap_Average_Treatment_cost_by_Age_group_and_Country.png)
 
 ### 4. Survival Years & Cancer Stage Insights
 
